@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="js/sidebar.js"></script>
+        <title>PB&J Quiz</title>
+    </head>
+    <body>
+
+      <div class = "sidebar">
+        <div id="arrow">
+          <img src ="svg/arrow.svg" width = 20% ></img>
+        </div>
+        <div id="date"></div>
+        <div id="theme">No Meeting Wednesday</div>
+        <div id="time"></div>
+        <div id="weather">
+          <img src ="svg/weather-rain.svg" width = 36%  id = "weather-icon"></img>
+          <div id="temp"></div>
+        </div>
+      </div>
+
+      <div id="quiz">
+      <div id="main-page">
+        <img id="plate" src="images/FirstPageQuiz.gif"></img>
+        <div id = "main-header">
+          <!-- <p>What</p>
+          <p>PB&J</p>
+          <p>are you?</p> -->
+          What PB&J are you?
+        </div>
+        <button id="take-quiz">Take Quiz</button>
+      </div>
+
+      <div id="Q1" class = "question-page">
+        <h1 class = "question" id="Q1-Q">Your favorite adventure would be:</h1>
+        <div class= "answer-div">
+        <button id="Q1-A" class ="answer">Scaling a mountain</button>
+        <button id="Q1-B" class ="answer">Shopping in Paris</button>
+        <button id="Q1-C" class ="answer">On a hammock in Bali</button>
+      </div>
+      </div>
+
+      <div id="Q2" class = "question-page">
+        <h1 class = "question" id="Q2-Q">Choose a snack food:</h1>
+        <div class= "answer-div">
+        <button id="Q2-A" class ="answer">Healthy trail mix</button>
+        <button id="Q2-B" class ="answer">Prosciutto + melon</button>
+      </div>
+      </div>
+
+      <div id="Q3" class = "question-page">
+        <h1 class = "question" id="Q3-Q">My friends would describe me as</h1>
+        <div class= "answer-div">
+        <button id="Q3-A" class ="answer">Cool + stylish</button>
+        <button id="Q3-B" class ="answer">Funny + down-to-earth</button>
+      </div>
+      </div>
+
+      <div id="Q4" class = "question-page">
+        <h1 class = "question" id="Q4-Q">Your personal style is:</h1>
+        <div class= "answer-div">
+        <button id="Q4-A" class ="answer">Athletic</button>
+        <button id="Q4-B" class ="answer">Trendy</button>
+        <button id="Q4-C" class ="answer">Comfy</button>
+      </div>
+      </div>
+
+      <div id="Q5" class = "question-page">
+        <h1 class = "question" id="Q5-Q">My perfect lazy day is spent:</h1>
+        <div class= "answer-div">
+        <button id="Q5-A" class ="answer">Watching the Discovery Channel</button>
+        <button id="Q5-B" class ="answer">Reading the new issue of Vogue</button>
+      </div>
+      </div>
+
+      <div id="Q6" class = "question-page">
+        <h1 class = "question" id="Q6-Q">I have a magazine subscription to:</h1>
+        <div class= "answer-div">
+        <button id="Q6-A" class ="answer">People</button>
+        <button id="Q6-B" class ="answer">National Geographic</button>
+      </div>
+      </div>
+
+      <div id="Q7" class = "question-page">
+        <h1 class = "question" id="Q7-Q">Which characteristic can you relate to most?</h1>
+        <div class= "answer-div" id="Q7-A">
+        <button id="Q7-A" class ="answer">Curiosity</button>
+        <button id="Q7-B" class ="answer">Creativity</button>
+        <button id="Q7-C" class ="answer">Humor</button>
+      </div>
+      </div>
+
+      <div id="Q8" class = "question-page">
+        <h1 class = "question" id="Q8-Q">My vacation spot of choice is:</h1>
+        <div class= "answer-div">
+        <button id="Q8-A" class ="answer">Colorado</button>
+        <button id="Q8-B" class ="answer">Martha's Vineyard</button>
+      </div>
+      </div>
+
+      <div id="Q9" class = "question-page">
+        <h1 class = "question" id="Q9-Q">On a Friday night you can find me:</h1>
+        <div class= "answer-div">
+        <button id="Q9-A" class ="answer">Grabbing a drink with friends at a hip new bar</button>
+        <button id="Q9-B" class ="answer">Bundled up at home watching Netflix</button>
+      </div>
+      </div>
+
+      <div id="R1" class = "result-page">
+        <img src="images/result1.gif"></img>
+        <div class = "result-text">
+          <h1>Healthy n' Crunchy</h1>
+          <p>Your ideal PB+J reflects your “one-with-nature” lifestyle. All things organic go into your “au natural” sandwich, because whoever said delicious snacks can’t be healthy was sorely mistaken. So keep spreading that almond butter with organic fruit preserves, and snack on!</p>
+          <button class="take-quiz-again">Take Quiz Again?</button>
+        </div>
+    </div>
+
+      <div id="R2" class = "result-page">
+        <img src="images/result2.gif"></img>
+        <div class = "result-text">
+          <h1>PB&J La Gourmet</h1>
+          <p>You like to go all-out and get adventurous with your food—even when it comes to something as simple as a PB+J. Your refined palate necessitates only the finest of imported French jams, the most exotic roasted peanut spread, all piled high atop the bread of your choice. Who said PB+J’s couldn’t be fancy?!</p>
+          <button class="take-quiz-again">Take Quiz Again?</button>
+      </div>
+      </div>
+
+      <div id="R3" class = "result-page">
+        <img src="images/result3.gif"></img>
+        <div class = "result-text">
+          <h1>The Comfy Classic</h1>
+          <p>You like to keep things simple when crafting your PB+J—because why change something that’s already so great? The smooth, buttery taste that peanut butter made by Jif and Skippy merged with some strawberry Smuckers jelly is simply indescribable, so cutting corners in the name of health just isn’t an option. </p>
+          <button class="take-quiz-again">Take Quiz Again?</button>
+      </div>
+
+    </div>
+    </div>
+
+    </body>
+</html>
